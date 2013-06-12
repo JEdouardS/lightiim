@@ -7,6 +7,8 @@ var about = "/about";
 var inbox = "/inbox";
 var tell = "/tell";
 
+var server = "http://lightim.aws.af.cm/";
+
 var account = {
     
 	createU : function(){
@@ -25,7 +27,7 @@ var account = {
 	        } else {
         
 	            $.ajax({
-	                url: "http://node.freelancis.net/create/"+user+"/"+pass, 
+	                url: server+"create/"+user+"/"+pass, 
 	                type: $(this).attr('method'),
 	                dataType: "jsonp", 
 	                success: function(data){
@@ -86,7 +88,7 @@ var account = {
 
 		    //Affichage de l'INBOX
 			$.ajax({
-		        url: "http://node.freelancis.net/login/"+user+"/"+pass, 
+		        url: server+"login/"+user+"/"+pass, 
 		        type: $(this).attr('method'),
 		        dataType: "jsonp", 
 		        success: function(data){
