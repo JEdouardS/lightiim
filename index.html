@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pwitter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta property="og:type" content="website"/>
+<!--
+<meta property="og:url" content="http://whereisgasp.freelancis.net"/>
+<meta property="og:image" content="http://whereisgasp.freelancis.net/apple-touch-icon-114x114-precomposed.png"/>
+-->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57-precomposed.png">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
+<script src="js/document_ready.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/style.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		$('.nav-collapser').collapse('hide');
+		
+	});
+</script>
+
+<script src="js/bootstrap.js"></script>
+
+<style>
+
+
+#connexion_form, #subscribe_form, #messages, #contact, #contacts, #inbox{
+	display: none;
+}
+.wrap{
+	margin-top: 50px;
+}
+#btn-reset{
+	margin-left:120px;
+}
+
+
+</style>
+
+
+</head>
+<body>
+	
+	<div class="navbar navbar-inverse navbar-fixed-top">
+	    <div class="navbar-inner">
+	        <div class="container">
+	        	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	        		<span class="icon-bar"></span>
+	        		<span class="icon-bar"></span>
+	      			<span class="icon-bar"></span>
+	        	</button>
+	        	<a class="brand" href="./index.html">Pwitter</a>
+        		<div class="nav-collapse in collapse" style="height: auto;">
+            		<ul class="nav">
+            			<li class="active">
+                			<a href="./index.html" id="connexion">Connexion</a>
+            			</li>
+            			<li class="">
+                			<a href="./getting-started.html" id="inscription">Inscription</a>
+            			</li>
+            			<li class="">
+                			<a href="./base-css.html" id="message">Messages</a>
+            			</li>
+            			<li class="">
+            				<a href="index.html">Déconnexion</a>
+            			</li>
+            		</ul>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+    <div class="row wrap">
+    	<div class="container">
+    			<div id="subscribe_form">
+		<h1>Inscription</h1>
+		<form id="subscribe" method="get">
+			<label for="user">User :</label>
+			<input type="text" id="sub-log" name="user"/>
+			<br />
+
+			<label for="pass">Mot de passe :</label>
+			<input type="text" id="sub-pass" name="pass" />
+
+			<br />
+
+			<input type="submit" value="S'inscrire" class="btn btn-primary" /> 
+
+		</form>
+		<a href="#connexion_form">Connexion</a>
+	</div>
+
+	<div id="connexion_form">
+	<h1>Connexion</h1>
+	<form id="user" method="get">
+		<label for="user">User :</label>
+		<input type="text" id="log-log" name="user"/>
+		<br />
+
+		<label for="pass">Mot de passe :</label>
+		<input type="text" id="log-pass" name="pass" />
+
+		<br />
+
+		<input type="submit" value="Se connecter" class="btn btn-primary" />
+	</form>
+
+	</div>
+    	</div>
+    </div>
+
+
+	<!--<p>Contacts</p>
+
+	<a href="index.html?user">-->
+
+
+
+
+
+	<div id="content">
+			
+			<div id="contacts">
+				
+				
+			</div>
+			
+			<div id="inbox">
+				<div id="chat_form">
+
+					<form id="chat" method="get">
+						<label for="destinataire">Destinataire :</label>
+						<input type="text" id="dest" name="destinataire" /> <br />
+						<label for="message">Message :</label>
+						<textarea rows="5" cols="10" id="message" name="message" width="300"></textarea>
+
+						<div><input type="submit" value="Pwit" class="btn btn-success" /><input type="reset" value="Effacer" class="btn" id="btn-reset" /></div>
+					</form>
+
+				</div>
+			</div>
+	</div>
+	
+	
+
+</body>
+</html>
+
+

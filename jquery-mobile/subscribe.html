@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pwitter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta property="og:type" content="website"/>
+<!--
+<meta property="og:url" content="http://whereisgasp.freelancis.net"/>
+<meta property="og:image" content="http://whereisgasp.freelancis.net/apple-touch-icon-114x114-precomposed.png"/>
+-->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57-precomposed.png">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.2.0.css">
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
+
+<script src="js/jquery.mobile-1.2.0.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/subscribe_dou.js"></script>
+<script src="js/json_dou.js"></script>
+
+	<style>
+
+	#connexion_form{
+		display: none;
+	}
+
+	</style>
+
+</head>
+
+<body>
+
+<div data-role="page" class="type-home">
+	<div data-role="header">
+		<a href="index.html" data-icon="arrow-l">Précédent</a>
+		<h1>Pwitter</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="c">
+
+		<div id="subscribe_form">
+
+			<h1>Inscription</h1>
+
+			<form id="subscribe" method="get">
+				<label for="user">user :</label>
+				<input type="text" id="sub-log" name="user"/>
+				<br />
+				
+				<label for="pass">Mot de passe :</label>
+				<input type="text" id="sub-pass" name="pass" />
+				
+				<br />
+				
+				<input type="submit" value="SAVE" />				
+			</form>
+
+		</div>
+
+			<a id="trigger" href="#connexion_form">Ou connectez-vous</a>
+
+		<div id="connexion_form">
+
+			<h1>Connexion</h1>
+
+			<form id="user" method="get">
+				<label for="user">User :</label>
+				<input type="text" id="log-log" name="user"/>
+				<br />
+				
+				<label for="pass">Mot de passe :</label>
+				<input type="text" id="log-pass" name="pass" />
+				
+				<br />
+				
+				<input type="submit" value="SAVE" />
+			</form>
+
+		</div>
+
+
+			<div id="content">
+					
+				<div id="contact"></div>
+
+				<div id="chat_form">
+
+					<form id="chat" method="get">
+						<label for="destinataire">Destinataire :</label>
+						<input type="text" id="dest" name="destinataire" /> <br />
+						<label for="message">Message :</label>
+						<textarea rows="5" cols="8" id="message" name="message"></textarea>
+
+						<input type="submit" value="Envoyer" />
+					</form>
+
+				</div>
+
+			</div>
+	</div>
+</div>
+
+</body>
+</html>
+
+		<div id="subscribe_form">
+
+			<h1>Inscription</h1>
+
+			<form id="subscribe" method="get">
+				<label for="user">user :</label>
+				<input type="text" id="sub-log" name="user"/>
+				<br />
+				
+				<label for="pass">Mot de passe :</label>
+				<input type="text" id="sub-pass" name="pass" />
+				
+				<br />
+				
+				<input type="submit" value="SAVE" />				
+			</form>
+
+		</div>
+
+			<a id="trigger" href="#connexion_form">Ou connectez-vous</a>
+
+		<div id="connexion_form">
+
+			<h1>Connexion</h1>
+
+			<form id="user" method="get">
+				<label for="user">User :</label>
+				<input type="text" id="log-log" name="user"/>
+				<br />
+				
+				<label for="pass">Mot de passe :</label>
+				<input type="text" id="log-pass" name="pass" />
+				
+				<br />
+				
+				<input type="submit" value="SAVE" />
+			</form>
+
+		</div>
+
+
+			<div id="content">
+					
+				<div id="contact"></div>
+
+				<div id="chat_form">
+
+					<form id="chat" method="get">
+						<label for="destinataire">Destinataire :</label>
+						<input type="text" id="dest" name="destinataire" /> <br />
+						<label for="message">Message :</label>
+						<textarea rows="5" cols="8" id="message" name="message"></textarea>
+
+						<input type="submit" value="Envoyer" />
+					</form>
+
+				</div>
+
+			</div>
